@@ -1,7 +1,7 @@
 @-moz-document domain("wikipedia.org") {
     /* ==UserStyle==
     @name         Dracula for Wikipedia
-    @version      0.1.0
+    @version      0.1.1
     @description  Dark theme for Wikipedia
     @namespace    wasi-master/dracula-wikipedia
     @author       Wasi Master <arianmollik323@gmail.com> (https://wasi-master.github.io)
@@ -64,7 +64,8 @@
         border-color: transparent !important;
     }
     body,
-    .mw-page-container {
+    .mw-page-container,
+    .mw-parser-output .documentation, .mw-parser-output .documentation-metadata{
         background-color: var(--dracula-background)
     }
     .app-badges .footer-sidebar-content,
@@ -128,7 +129,13 @@
     .oo-ui-inputWidget-input,
     .mw-rcfilters-ui-filterMenuSectionOptionWidget,
     .mw-rcfilters-ui-menuSelectWidget-footer,
-    .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled,
+    .mw-parser-output .sidebar,
+    .warningbox,
+    .mw-parser-output .comportal-blocks,
+    .mw-parser-output .tpl-vp-sections,
+    .mw-ui-button,
+    .mw-parser-output .sister-bar{
         background-color: var(--dracula-current-line) !important;
         color: var(--dracula-foreground) !important
     }
@@ -181,7 +188,10 @@
     .mw-parser-output .p-current-events-calendar > div,
     .mw-parser-output .current-events-calendar caption,
     .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content),
-    .flaggedrevs-pending {
+    .flaggedrevs-pending,
+    .mw-parser-output .Spam-nav .sidebar-heading,
+    .sidebar-title,
+    .mw-parser-output .comportal-section h2{
         background-color: var(--dracula-comment) !important
     }
     .mw-parser-output #mp-right .mp-h2,
@@ -198,7 +208,11 @@
     .mw-parser-output .related-organisations-header,
     #mw-createaccount-join:hover,
     .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
-    .mw-rcfilters-ui-row {
+    .mw-rcfilters-ui-row,
+    .mw-parser-output .tpl-vp-heading,
+    .mw-parser-output .centralized-discussion-title,
+    .mw-parser-output .centralized-discussion-vps,
+    .mw-parser-output .centralized-discussion-navbar{
         background-color: var(--dracula-comment) !important;
         color: var(--dracula-foreground) !important;
     }
@@ -223,6 +237,27 @@
     }
     .mw-plusminus-null {
         color: var(--dracula-comment)
+    }
+    .helpContents-icon img,
+    #mw-indicator-mw-helplink a{
+        filter: invert(1);
+    }
+    .mw-ui-input{
+        background-color: var(--dracula-background-alt);
+        color: var(--dracula-foreground)
+    }
+    span[style*="background"],
+    table[style*="background"],
+    td[style*="background"],
+    th[style*="background"],
+    tr[style*="background"],
+    thead[style*="background"],
+    tbody[style*="background"]{
+        background-color: var(--dracula-current-line) !important;
+        color: var(--dracula-foreground) !important
+    }
+    ul{
+        list-style-image: none !important;
     }
     
     /* Pygments */
