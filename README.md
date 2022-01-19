@@ -2,7 +2,8 @@
 
 > A dark theme for [Wikipedia](https://www.wikipedia.com).
 
-![Screenshot](./screenshot.png)
+![Main Page Screenshot](screenshots/main_page.png "Screenshot of wikipedia main page")
+![Screenshot](screenshots/screenshot.png "Long screenshot of the wikipedia article for dracula theme")
 
 ## Install
 

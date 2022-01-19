@@ -1,0 +1,549 @@
+@-moz-document domain("wikipedia.org") {
+    /* ==UserStyle==
+    @name         Dracula for Wikipedia
+    @version      0.1.0
+    @description  Dark theme for Wikipedia
+    @namespace    wasi-master/dracula-wikipedia
+    @author       Wasi Master <arianmollik323@gmail.com> (https://wasi-master.github.io)
+    @homepageURL  https://github.com/dracula/wikipedia
+    @supportURL   https://github.com/dracula/wikipedia/issues
+    @updateURL    https://github.com/dracula/wikipedia/raw/master/wikipedia.user.css
+    @license      MIT
+    ==/UserStyle== */
+    
+    :root {
+        --dracula-background: #282a36!important;
+        --dracula-current-line: #44475a!important;
+        --dracula-selection: #44475a!important;
+        --dracula-foreground: #f8f8f2!important;
+        --dracula-comment: #6272a4!important;
+        --dracula-cyan: #8be9fd!important;
+        --dracula-green: #50fa7b!important;
+        --dracula-orange: #ffb86c!important;
+        --dracula-pink: #ff79c6!important;
+        --dracula-purple: #bd93f9!important;
+        --dracula-red: #ff5555!important;
+        --dracula-yellow: #f1fa8c!important;
+        --dracula-color0: #21222c!important;
+        --dracula-color1: #ff5555!important;
+        --dracula-color2: #50fa7b!important;
+        --dracula-color3: #f1fa8c!important;
+        --dracula-color4: #f1fa8c!important;
+        --dracula-color5: #ff79c6!important;
+        --dracula-color6: #8be9fd!important;
+        --dracula-color7: #f8f8f2!important;
+        --dracula-color8: #6272a4!important;
+        --dracula-color9: #ff6e6e!important;
+        --dracula-color10: #69ff94!important;
+        --dracula-color11: #ffffa5!important;
+        --dracula-color12: #d6acff!important;
+        --dracula-color13: #ff92df!important;
+        --dracula-color14: #a4ffff!important;
+        --dracula-color15: #ffffff!important;
+        --dracula-line-highlight: #44475a75!important;
+        --dracula-non-text: #ffffff1a!important;
+        --dracula-white: #ffffff!important;
+        --dracula-tab-drop-background: #44475a70!important;
+        --dracula-background-lighter: #424450;
+        --dracula-background-alt: #343746!important
+    }
+    .mw-wiki-logo{
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Wikipedia_logo_dark-mode.svg");
+    }
+    .central-featured-lang small,
+    .footer-sidebar-text,
+    .other-project-tagline,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--dracula-foreground)
+    }
+    * {
+      border-color: transparent !important;
+    }
+    body,
+    .mw-page-container {
+        background-color: var(--dracula-background)
+    }
+    .app-badges .footer-sidebar-content,
+    .lang-list-container {
+        background-color: var(--dracula-current-line)
+    }
+    #bodyContent,
+    #content,
+    .bookshelf .text,
+    .mw-body,
+    .parsoid-body,
+    .mwe-popups.mwe-popups-container,
+    .wikitable,
+    pre,
+    code,
+    .mw-code,
+    .mw-parser-output #mp-right,
+    .mw-parser-output #mp-left,
+    .mw-parser-output .contentsPage--topic,
+    .mw-parser-output .p-current-events-headlines,
+    .mw-parser-output .current-events-main,
+    .mw-parser-output .featured-article-box,
+    .mw-parser-output .good-article-box{
+        background-color: var(--dracula-background)!important;
+        color: var(--dracula-foreground)!important;
+    }
+    .infobox,
+    .pure-form input[type=search],
+    .toc,
+    .toccolours,
+    table.metadata,
+    caption[style],
+    .mw-parser-output .sister-box,
+    .mw-normal-catlinks,
+    .suggestions-results,
+    .mw-parser-output .navbox-title,
+    .wikitable > tr > th,
+    .wikitable > * > tr > th,
+    .mw-parser-output .navbox-abovebelow,
+    .mw-parser-output .navbox-group,
+    .mw-parser-output .navbox-subgroup .navbox-title,
+    table.ombox,
+    .mw-parser-output .portalbox > ul,
+    .mw-parser-output .help-box,
+    div[style],
+    .mw-parser-output #mp-topbanner,
+    .mw-parser-output .contentsPage--topic .contentsPage__title,
+    .mw-parser-output .contents-pages-footer,
+    .mw-parser-output .p-current-events-news-browser,
+    .mw-parser-output .p-current-events-headlines h2,
+    .mw-parser-output .current-events-calendar,
+    #catlinks,
+    .mw-parser-output .current-events-sidebar,
+    .vector-search-box-input,
+    .mw-parser-output #mp-other-lower .mp-h2,
+    .sister-projects-table.other-projs-table,
+    .sister-projects-table.other-langs-table,
+    .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle,
+    .mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+    .oo-ui-inputWidget-input,
+    .mw-rcfilters-ui-filterMenuSectionOptionWidget,
+    .mw-rcfilters-ui-menuSelectWidget-footer,
+    .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled{
+        background-color: var(--dracula-current-line) !important;
+        color: var(--dracula-foreground) !important
+    }
+    .suggestion-link.active .suggestion-title,
+    .vector-menu-portal .vector-menu-content li a,
+    .toctogglelabel,
+    a,
+    a:active,
+    a:focus {
+        color: var(--dracula-cyan) !important
+    }
+    .suggestions-dropdown,
+    div.thumbinner,
+    .vector-menu-tabs .selected,
+    .mw-parser-output .index-box,
+    .main-page-body,
+    #mw-createaccount-join,
+    .mw-rcfilters-ui-itemMenuOptionWidget.oo-ui-optionWidget-selected,
+    .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected){
+        background-color: var(--dracula-current-line) !important
+    }
+    .suggestion-description,
+    .suggestion-title,
+    .vector-user-menu-legacy #pt-anonuserpage,
+    .suggestions a.mw-searchSuggest-link,
+    .suggestions a.mw-searchSuggest-link:hover,
+    .suggestions a.mw-searchSuggest-link:active,
+    .suggestions a.mw-searchSuggest-link:focus,
+    .tocnumber,
+    .mw-footer li,
+    .vector-menu-portal h3,
+    .suggestions-result,
+    .mw-parser-output .related-organisations-box,
+    .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-title,
+    .mw-rcfilters-ui-itemMenuOptionWidget-label-title,
+    .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label,
+    .mw-rcfilters-ui-filterMenuHeaderWidget-title,
+    .mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget,
+    .mw-rcfilters-ui-itemMenuOptionWidget-label-desc{
+        color: var(--dracula-foreground) !important;
+    }
+    .central-featured-lang :hover,
+    .other-project-link:hover,
+    .suggestion-link.active,
+    .suggestion-thumbnail,
+    .mw-parser-output .module-shortcutboxplain,
+    .mw-parser-output .help-box .sidebar-title,
+    .mw-parser-output .current-events-heading,
+    .mw-parser-output .p-current-events-calendar,
+    .mw-parser-output .p-current-events-calendar > div,
+    .mw-parser-output .current-events-calendar caption,
+    .mw-parser-output .current-events-sidebar > div:not(.mw-collapsible-content),
+    .flaggedrevs-pending{
+        background-color: var(--dracula-comment) !important
+    }
+    .mw-parser-output #mp-right .mp-h2,
+    .mw-parser-output #mp-left .mp-h2,
+    .mw-parser-output #mp-tfp-h2,
+    .mw-parser-output .featured-article-header,
+    .mw-parser-output .good-article-header,
+    .mw-parser-output .did-you-know-header,
+    .mw-parser-output .featured-picture-header,
+    .mw-parser-output .topic-listing-header,
+    .mw-parser-output .other-projs-header,
+    .mw-parser-output .other-langs-header,
+    .mw-parser-output .contributor-help-header,
+    .mw-parser-output .related-organisations-header,
+    #mw-createaccount-join:hover,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
+    .mw-rcfilters-ui-row{
+        background-color: var(--dracula-comment) !important;
+        color: var(--dracula-foreground) !important;
+    }
+    
+    #mw-page-base,
+    .vector-menu-tabs li,
+    #mw-panel,
+    .mw-parser-output #mp-lower{
+        background-color: var(--dracula-background) !important;
+        background-image: none !important
+    }
+    kbd{
+        background-color: var(--dracula-current-line) !important;
+        background-image: none !important;
+        color: var(--dracula-foreground) !important;
+    }
+    
+    .mw-plusminus-pos{color:var(--dracula-green)}
+    .mw-plusminus-neg{color:var(--dracula-red)}
+    .mw-plusminus-null{color:var(--dracula-comment)}
+    
+    spn.oo-ui-iconElement-icon{
+        filter: invert(1)
+    }
+    
+    /* Pygments */
+    .mw-highlight .hll {
+        background-color: #f1fa8c
+    }
+    .mw-highlight {
+        background: #282a36;
+        color: #f8f8f2
+    }
+    .mw-highlight .c {
+        color: #6272a4
+    }
+    /* Comment */
+    .mw-highlight .err {
+        color: #f8f8f2
+    }
+    /* Error */
+    .mw-highlight .g {
+        color: #f8f8f2
+    }
+    /* Generic */
+    .mw-highlight .k {
+        color: #ff79c6
+    }
+    /* Keyword */
+    .mw-highlight .l {
+        color: #f8f8f2
+    }
+    /* Literal */
+    .mw-highlight .n {
+        color: #f8f8f2
+    }
+    /* Name */
+    .mw-highlight .o {
+        color: #ff79c6
+    }
+    /* Operator */
+    .mw-highlight .x {
+        color: #f8f8f2
+    }
+    /* Other */
+    .mw-highlight .p {
+        color: #f8f8f2
+    }
+    /* Punctuation */
+    .mw-highlight .ch {
+        color: #6272a4
+    }
+    /* Comment.Hashbang */
+    .mw-highlight .cm {
+        color: #6272a4
+    }
+    /* Comment.Multiline */
+    .mw-highlight .cp {
+        color: #ff79c6
+    }
+    /* Comment.Preproc */
+    .mw-highlight .cpf {
+        color: #6272a4
+    }
+    /* Comment.PreprocFile */
+    .mw-highlight .c1 {
+        color: #6272a4
+    }
+    /* Comment.Single */
+    .mw-highlight .cs {
+        color: #6272a4
+    }
+    /* Comment.Special */
+    .mw-highlight .gd {
+        color: #8b080b
+    }
+    /* Generic.Deleted */
+    .mw-highlight .ge {
+        color: #f8f8f2;
+        text-decoration: underline
+    }
+    /* Generic.Emph */
+    .mw-highlight .gr {
+        color: #f8f8f2
+    }
+    /* Generic.Error */
+    .mw-highlight .gh {
+        color: #f8f8f2;
+        font-weight: bold
+    }
+    /* Generic.Heading */
+    .mw-highlight .gi {
+        color: #f8f8f2;
+        font-weight: bold
+    }
+    /* Generic.Inserted */
+    .mw-highlight .go {
+        color: #44475a
+    }
+    /* Generic.Output */
+    .mw-highlight .gp {
+        color: #f8f8f2
+    }
+    /* Generic.Prompt */
+    .mw-highlight .gs {
+        color: #f8f8f2
+    }
+    /* Generic.Strong */
+    .mw-highlight .gu {
+        color: #f8f8f2;
+        font-weight: bold
+    }
+    /* Generic.Subheading */
+    .mw-highlight .gt {
+        color: #f8f8f2
+    }
+    /* Generic.Traceback */
+    .mw-highlight .kc {
+        color: #ff79c6
+    }
+    /* Keyword.Constant */
+    .mw-highlight .kd {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Keyword.Declaration */
+    .mw-highlight .kn {
+        color: #ff79c6
+    }
+    /* Keyword.Namespace */
+    .mw-highlight .kp {
+        color: #ff79c6
+    }
+    /* Keyword.Pseudo */
+    .mw-highlight .kr {
+        color: #ff79c6
+    }
+    /* Keyword.Reserved */
+    .mw-highlight .kt {
+        color: #8be9fd
+    }
+    /* Keyword.Type */
+    .mw-highlight .ld {
+        color: #f8f8f2
+    }
+    /* Literal.Date */
+    .mw-highlight .m {
+        color: #bd93f9
+    }
+    /* Literal.Number */
+    .mw-highlight .s {
+        color: #f1fa8c
+    }
+    /* Literal.String */
+    .mw-highlight .na {
+        color: #50fa7b
+    }
+    /* Name.Attribute */
+    .mw-highlight .nb {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Builtin */
+    .mw-highlight .nc {
+        color: #50fa7b
+    }
+    /* Name.Class */
+    .mw-highlight .no {
+        color: #f8f8f2
+    }
+    /* Name.Constant */
+    .mw-highlight .nd {
+        color: #f8f8f2
+    }
+    /* Name.Decorator */
+    .mw-highlight .ni {
+        color: #f8f8f2
+    }
+    /* Name.Entity */
+    .mw-highlight .ne {
+        color: #f8f8f2
+    }
+    /* Name.Exception */
+    .mw-highlight .nf {
+        color: #50fa7b
+    }
+    /* Name.Function */
+    .mw-highlight .nl {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Label */
+    .mw-highlight .nn {
+        color: #f8f8f2
+    }
+    /* Name.Namespace */
+    .mw-highlight .nx {
+        color: #f8f8f2
+    }
+    /* Name.Other */
+    .mw-highlight .py {
+        color: #f8f8f2
+    }
+    /* Name.Property */
+    .mw-highlight .nt {
+        color: #ff79c6
+    }
+    /* Name.Tag */
+    .mw-highlight .nv {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Variable */
+    .mw-highlight .ow {
+        color: #ff79c6
+    }
+    /* Operator.Word */
+    .mw-highlight .w {
+        color: #f8f8f2
+    }
+    /* Text.Whitespace */
+    .mw-highlight .mb {
+        color: #bd93f9
+    }
+    /* Literal.Number.Bin */
+    .mw-highlight .mf {
+        color: #bd93f9
+    }
+    /* Literal.Number.Float */
+    .mw-highlight .mh {
+        color: #bd93f9
+    }
+    /* Literal.Number.Hex */
+    .mw-highlight .mi {
+        color: #bd93f9
+    }
+    /* Literal.Number.Integer */
+    .mw-highlight .mo {
+        color: #bd93f9
+    }
+    /* Literal.Number.Oct */
+    .mw-highlight .sa {
+        color: #f1fa8c
+    }
+    /* Literal.String.Affix */
+    .mw-highlight .sb {
+        color: #f1fa8c
+    }
+    /* Literal.String.Backtick */
+    .mw-highlight .sc {
+        color: #f1fa8c
+    }
+    /* Literal.String.Char */
+    .mw-highlight .dl {
+        color: #f1fa8c
+    }
+    /* Literal.String.Delimiter */
+    .mw-highlight .sd {
+        color: #f1fa8c
+    }
+    /* Literal.String.Doc */
+    .mw-highlight .s2 {
+        color: #f1fa8c
+    }
+    /* Literal.String.Double */
+    .mw-highlight .se {
+        color: #f1fa8c
+    }
+    /* Literal.String.Escape */
+    .mw-highlight .sh {
+        color: #f1fa8c
+    }
+    /* Literal.String.Heredoc */
+    .mw-highlight .si {
+        color: #f1fa8c
+    }
+    /* Literal.String.Interpol */
+    .mw-highlight .sx {
+        color: #f1fa8c
+    }
+    /* Literal.String.Other */
+    .mw-highlight .sr {
+        color: #f1fa8c
+    }
+    /* Literal.String.Regex */
+    .mw-highlight .s1 {
+        color: #f1fa8c
+    }
+    /* Literal.String.Single */
+    .mw-highlight .ss {
+        color: #f1fa8c
+    }
+    /* Literal.String.Symbol */
+    .mw-highlight .bp {
+        color: #f8f8f2;
+        font-style: italic
+    }
+    /* Name.Builtin.Pseudo */
+    .mw-highlight .fm {
+        color: #50fa7b
+    }
+    /* Name.Function.Magic */
+    .mw-highlight .vc {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Variable.Class */
+    .mw-highlight .vg {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Variable.Global */
+    .mw-highlight .vi {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Variable.Instance */
+    .mw-highlight .vm {
+        color: #8be9fd;
+        font-style: italic
+    }
+    /* Name.Variable.Magic */
+    .mw-highlight .il {
+        color: #bd93f9
+    }
+    /* Literal.Number.Integer.Long */
+    }
