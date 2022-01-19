@@ -15,3 +15,7 @@ Fixed the following items:
 - Search bars (`.mw-ui-input`)
 - List bullet icons (`li`)
 - Things with inline css colors
+
+### 0.1.2
+
+Fix some language specific issues

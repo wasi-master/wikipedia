@@ -1,7 +1,7 @@
 @-moz-document domain("wikipedia.org") {
     /* ==UserStyle==
     @name         Dracula for Wikipedia
-    @version      0.1.1
+    @version      0.1.2
     @description  Dark theme for Wikipedia
     @namespace    wasi-master/dracula-wikipedia
     @author       Wasi Master <arianmollik323@gmail.com> (https://wasi-master.github.io)
@@ -135,7 +135,24 @@
     .mw-parser-output .comportal-blocks,
     .mw-parser-output .tpl-vp-sections,
     .mw-ui-button,
-    .mw-parser-output .sister-bar{
+    .mw-parser-output .sister-bar,
+    .hauptseite-box-content,
+    .mw-parser-output .mp-Sec,
+    .mw-parser-output .infomain,
+    .mw-parser-output .main-top,
+    .mw-parser-output .main-box,
+    .mw-parser-output .header,
+    .mw-parser-output .mainpage-right .mainpage-headline,
+    #accueil_2017_en-tete,
+    .mw-parser-output .frontPageRight .frontPageBlock,
+    .mw-parser-output div.hp-header, .mw-parser-output div.hp-portalen, .mw-parser-output div.hp-footer,
+    .mw-parser-output div.hp,
+    .mw-parser-output table.hp-block h2.hp-segment-title,
+    .mw-parser-output #frame-main2,
+    .mw-parser-output #mp-2012-column-right-block-a,
+    .mw-parser-output .main-page-first-row > div,
+    .mw-parser-output .main-page-second-row > div,
+    .mw-parser-output .main-block{
         background-color: var(--dracula-current-line) !important;
         color: var(--dracula-foreground) !important
     }
@@ -174,7 +191,8 @@
     .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label,
     .mw-rcfilters-ui-filterMenuHeaderWidget-title,
     .mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget,
-    .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
+    .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
+    .mw-parser-output #mp-2012-column-left .mp-2012-text{
         color: var(--dracula-foreground) !important;
     }
     .central-featured-lang :hover,
@@ -212,14 +230,25 @@
     .mw-parser-output .tpl-vp-heading,
     .mw-parser-output .centralized-discussion-title,
     .mw-parser-output .centralized-discussion-vps,
-    .mw-parser-output .centralized-discussion-navbar{
+    .mw-parser-output .centralized-discussion-navbar,
+    .mw-parser-output .hauptseite-box-title,
+    .mw-parser-output .mainpage-left .mainpage-headline,
+    .mw-parser-output .mainpage-left .mainpage-footer,
+    .mw-parser-output .mainpage-right .mainpage-footer,
+    .mw-parser-output .main-page-body > div:last-of-type,
+    .mw-parser-output #main-head,
+    .mw-parser-output .main-page-block-heading,
+    .mw-parser-output .main-header,
+    .mw-parser-output .content-improvement-invitation,
+    .mw-parser-output .content-improvement-item > a{
         background-color: var(--dracula-comment) !important;
         color: var(--dracula-foreground) !important;
     }
     #mw-page-base,
     .vector-menu-tabs li,
     #mw-panel,
-    .mw-parser-output #mp-lower {
+    .mw-parser-output #mp-lower,
+    .mw-parser-output #mp-2012-banner{
         background-color: var(--dracula-background) !important;
         background-image: none !important
     }
@@ -227,6 +256,13 @@
         background-color: var(--dracula-current-line) !important;
         background-image: none !important;
         color: var(--dracula-foreground) !important;
+    }
+    .mw-parser-output #pylh_2019_kefalida,
+    #accueil_2017_en-tete,
+    .mw-parser-output .frontPageRight .frontPageBlock,
+    .mw-parser-output #main-head,
+    .mw-parser-output .main-header__left{
+        background: none;
     }
     
     .mw-plusminus-pos {
@@ -246,6 +282,9 @@
         background-color: var(--dracula-background-alt);
         color: var(--dracula-foreground)
     }
+    .mw-parser-output .main-top-left{
+        background: rgba(0,0,0,0.5)
+    }
     span[style*="background"],
     table[style*="background"],
     td[style*="background"],
@@ -254,6 +293,15 @@
     thead[style*="background"],
     tbody[style*="background"]{
         background-color: var(--dracula-current-line) !important;
+        color: var(--dracula-foreground) !important
+    }
+    span[style*="color"],
+    table[style*="color"],
+    td[style*="color"],
+    th[style*="color"],
+    tr[style*="color"],
+    thead[style*="color"],
+    tbody[style*="color"]{
         color: var(--dracula-foreground) !important
     }
     ul{
