@@ -11,40 +11,40 @@
     @license      MIT
     ==/UserStyle== */
     :root {
-        --dracula-background: #282a36!important;
-        --dracula-current-line: #44475a!important;
-        --dracula-selection: #44475a!important;
-        --dracula-foreground: #f8f8f2!important;
-        --dracula-comment: #6272a4!important;
-        --dracula-cyan: #8be9fd!important;
-        --dracula-green: #50fa7b!important;
-        --dracula-orange: #ffb86c!important;
-        --dracula-pink: #ff79c6!important;
-        --dracula-purple: #bd93f9!important;
-        --dracula-red: #ff5555!important;
-        --dracula-yellow: #f1fa8c!important;
-        --dracula-color0: #21222c!important;
-        --dracula-color1: #ff5555!important;
-        --dracula-color2: #50fa7b!important;
-        --dracula-color3: #f1fa8c!important;
-        --dracula-color4: #f1fa8c!important;
-        --dracula-color5: #ff79c6!important;
-        --dracula-color6: #8be9fd!important;
-        --dracula-color7: #f8f8f2!important;
-        --dracula-color8: #6272a4!important;
-        --dracula-color9: #ff6e6e!important;
-        --dracula-color10: #69ff94!important;
-        --dracula-color11: #ffffa5!important;
-        --dracula-color12: #d6acff!important;
-        --dracula-color13: #ff92df!important;
-        --dracula-color14: #a4ffff!important;
-        --dracula-color15: #ffffff!important;
-        --dracula-line-highlight: #44475a75!important;
-        --dracula-non-text: #ffffff1a!important;
-        --dracula-white: #ffffff!important;
-        --dracula-tab-drop-background: #44475a70!important;
+        --dracula-background: #282a36 !important;
+        --dracula-current-line: #44475a !important;
+        --dracula-selection: #44475a !important;
+        --dracula-foreground: #f8f8f2 !important;
+        --dracula-comment: #6272a4 !important;
+        --dracula-cyan: #8be9fd !important;
+        --dracula-green: #50fa7b !important;
+        --dracula-orange: #ffb86c !important;
+        --dracula-pink: #ff79c6 !important;
+        --dracula-purple: #bd93f9 !important;
+        --dracula-red: #ff5555 !important;
+        --dracula-yellow: #f1fa8c !important;
+        --dracula-color0: #21222c !important;
+        --dracula-color1: #ff5555 !important;
+        --dracula-color2: #50fa7b !important;
+        --dracula-color3: #f1fa8c !important;
+        --dracula-color4: #f1fa8c !important;
+        --dracula-color5: #ff79c6 !important;
+        --dracula-color6: #8be9fd !important;
+        --dracula-color7: #f8f8f2 !important;
+        --dracula-color8: #6272a4 !important;
+        --dracula-color9: #ff6e6e !important;
+        --dracula-color10: #69ff94 !important;
+        --dracula-color11: #ffffa5 !important;
+        --dracula-color12: #d6acff !important;
+        --dracula-color13: #ff92df !important;
+        --dracula-color14: #a4ffff !important;
+        --dracula-color15: #ffffff !important;
+        --dracula-line-highlight: #44475a75 !important;
+        --dracula-non-text: #ffffff1a !important;
+        --dracula-white: #ffffff !important;
+        --dracula-tab-drop-background: #44475a70 !important;
         --dracula-background-lighter: #424450;
-        --dracula-background-alt: #343746!important
+        --dracula-background-alt: #343746 !important
     }
     .mw-wiki-logo {
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Wikipedia_logo_dark-mode.svg");
@@ -88,8 +88,8 @@
     .mw-parser-output .current-events-main,
     .mw-parser-output .featured-article-box,
     .mw-parser-output .good-article-box {
-        background-color: var(--dracula-background)!important;
-        color: var(--dracula-foreground)!important;
+        background-color: var(--dracula-background) !important;
+        color: var(--dracula-foreground) !important;
     }
     .infobox,
     .pure-form input[type=search],
