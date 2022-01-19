@@ -1,7 +1,7 @@
 @-moz-document domain("wikipedia.org") {
     /* ==UserStyle==
     @name         Dracula for Wikipedia
-    @version      0.1.2
+    @version      0.1.3
     @description  Dark theme for Wikipedia
     @namespace    wasi-master/dracula-wikipedia
     @author       Wasi Master <arianmollik323@gmail.com> (https://wasi-master.github.io)
@@ -152,7 +152,9 @@
     .mw-parser-output #mp-2012-column-right-block-a,
     .mw-parser-output .main-page-first-row > div,
     .mw-parser-output .main-page-second-row > div,
-    .mw-parser-output .main-block{
+    .mw-parser-output .main-block,
+    .mwe-popups-container,
+    .mwe-popups.mwe-popups-type-page.flipped-x.mwe-popups-image-pointer.mwe-popups-is-tall.mwe-popups-fade-out-down{
         background-color: var(--dracula-current-line) !important;
         color: var(--dracula-foreground) !important
     }

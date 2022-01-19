@@ -18,4 +18,8 @@ Fixed the following items:
 
 ### 0.1.2
 
-Fix some language specific issues
+Fixed some language specific issues
+
+### 0.1.3
+
+Fixed popups not being dark
